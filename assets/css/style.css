@@ -58,7 +58,7 @@
   --section-big-spacing: 100px;
   --section-mid-spacing: 70px;
   /* header-less-spacing: */
-  --header-less-spacing: 100px;
+  --header-less-spacing: 80px;
 }
 /* :root end */
 /* default css start */
@@ -396,6 +396,10 @@ label sup.star {
 
 .fill-primary {
   fill: var(--primary-color);
+  transition: all 0.3s;
+}
+.fill-primary:hover{
+  fill: var(--secondary-color);
 }
 .w-max-content {
   width: max-content;
@@ -472,4 +476,47 @@ label sup.star {
   line-height: 30px;
   margin-top: 10px;
 }
+.transition-smooth{
+  transition: all 0.3s;
+}
 /* default css end */
+/* header css start */
+header {
+  background-color: var(--white-color);
+  padding: 10px 12px;
+  min-height: var(--header-less-spacing);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+}
+header.fixed {
+  position: sticky;
+  top: 0;
+  padding: 7px 12px;
+  min-height: 80px;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 99;
+  transition: all 0.3s;
+}
+header.fixed a {
+  color: var(--primary-color);
+}
+header.fixed a:hover {
+  color: var(--accent-color0) !important;
+}
+header.fixed .active-page {
+  color: var(--accent-color0);
+}
+header.fixed .list-menu li a::before {
+  background-color: var(--accent-color0);
+}
+.save-listing-text:hover svg{
+  fill: var(--primary-color);
+}
+.header-logo{
+  max-width: 100px;
+}
+.header-offcanvas-wrap.offcanvas-top{
+  height: auto;
+}
+/* header css end */

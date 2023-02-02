@@ -516,7 +516,46 @@ header.fixed .list-menu li a::before {
 .header-logo{
   max-width: 100px;
 }
-.header-offcanvas-wrap.offcanvas-top{
-  height: auto;
+.header-offcanvas-wrap.offcanvas-top {
+  height: 400px;
+}
+.header-menu-list-grid{
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+}
+.header-menu-list-col li:not(:last-child){
+  padding-bottom: 10px;
+}
+.highlight-label{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-size: 10px;
 }
 /* header css end */
+/* sub footer css start */
+.sub-footer-section{
+  background-color: var(--light-prime-secondary-color);
+  padding: 15px 12px;
+}
+.menu-social-options-list a:not(:last-child) {
+  margin-right: 25px;
+}
+/* sub footer css end */
+/* footer css start */
+footer{
+  background-color: rgb(174 197 231 / 5%);
+  padding: 50px 12px;
+  border: 1px solid #dfdcdc;
+  border-width: 1px 0;
+}
+.footer-grid{
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.footer-list-wrap{
+  max-height: 260px;
+  overflow-y: auto;
+}
+/* footer css end */

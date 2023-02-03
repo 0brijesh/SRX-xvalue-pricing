@@ -616,4 +616,13 @@ footer {
 .small-text {
   font-size: 12px;
 }
+.thank-you-list li:not(:last-child){
+  padding-bottom: 15px;
+}
+.thank-you-list li svg{
+  min-width: 24px;
+  min-height: 24px;
+  position: relative;
+  top: 3px;
+}
 /* Calculate your home css end */

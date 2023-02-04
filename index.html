@@ -29,19 +29,6 @@
                             <a href="#"><img src="./assets/images/logo/srx-logo-purple-green.png"
                                     class="img-fluid header-logo" alt="" /></a>
                         </div>
-                        <div class="ms-auto d-flex align-items-center gap-2 gap-sm-4">
-                            <h6 class="hover-text cursor-pointer save-listing-text transition-smooth">
-                                <span class="me-2">
-                                    Saved Listings
-                                </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                    <path fill="none" d="M0 0H24V24H0z" />
-                                    <path
-                                        d="M20.243 4.757c2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236C5.515 3 8.093 2.56 10.261 3.44L6.343 7.358l1.414 1.415L12 4.53l-.013-.014.014.013c2.349-2.109 5.979-2.039 8.242.228z" />
-                                </svg>
-                            </h6>
-                            <h6><a href="">Sign in</a></h6>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -64,15 +51,15 @@
                             </div>
                             <div class="terrydale-capital-col text-center">
                                 <h6 class="fw-600 mb-2">Last Month</h6>
-                                <h3 class="fw-700 mb-0 counter" data-countto="143511" data-duration="8000">0</h3>
+                                <h3 class="fw-700 mb-0 counter" data-countto="131543" data-duration="8000">0</h3>
                             </div>
                             <div class="terrydale-capital-col text-center">
                                 <h6 class="fw-600 mb-2">This Month-To-Date</h6>
-                                <h3 class="fw-700 mb-0 counter" data-countto="143511" data-duration="8000">0</h3>
+                                <h3 class="fw-700 mb-0 counter" data-countto="16609" data-duration="8000">0</h3>
                             </div>
                             <div class="terrydale-capital-col text-center">
-                                <h6 class="fw-600 mb-2">TLast Year</h6>
-                                <h3 class="fw-700 mb-0 counter" data-countto="143511" data-duration="8000">0</h3>
+                                <h6 class="fw-600 mb-2">Last Year</h6>
+                                <h3 class="fw-700 mb-0 counter" data-countto="1952927" data-duration="8000">0</h3>
                             </div>
                         </div>
                         <div class="text-center">
@@ -90,8 +77,8 @@
                                 aria-selected="true">Sale</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-Rent-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-Rent" type="button" role="tab" aria-controls="pills-Rent"
+                            <button class="nav-link" id="pills-Sale-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-Sale" type="button" role="tab" aria-controls="pills-Sale"
                                 aria-selected="false">Rent</button>
                         </li>
                     </ul>
@@ -117,24 +104,29 @@
                                 <div class="form-group mb-3">
                                     <select class="form-select custom-input form-control"
                                         aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+											<option value="0">Select a property type</option>
+											<option value="6">Condominium</option>
+											<option value="1">HDB 3 Room</option>
+											<option value="2">HDB 4 Room</option>
+											<option value="3">HDB 5 Room</option>
+											<option value="4">HDB Executive</option>
+											<option value="5">Terrace</option>
+											<option value="8">Semi-D</option>
+											<option value="10">Detached</option>											
                                     </select>
                                 </div>
                                 <div class="row form-group mb-3">
                                     <div class="col-xl-7">
                                         <div class="row align-items-center">
                                             <div class="col-md-5">
-                                                <input type="text" name="" value="" placeholder="Floor"
+                                                <input type="number" name="" value="" placeholder="Floor"
                                                     class="custom-input form-control" />
                                             </div>
                                             <div class="col-md-2 px-0 text-center">
                                                 <b>|</b>
                                             </div>
                                             <div class="col-md-5">
-                                                <input type="text" name="" value="" placeholder="Unit"
+                                                <input type="number" name="" value="" placeholder="Unit"
                                                     class="custom-input form-control" />
                                             </div>
                                         </div>
@@ -145,7 +137,7 @@
                                     </div>
                                     <div class="col-xl-5 mt-4 mt-xl-0">
                                         <div class="position-relative">
-                                            <input type="text" name="" value="" placeholder="Sqm"
+                                            <input type="number" name="" value="" placeholder="Sqm"
                                                 class="custom-input form-control get-size-input" />
                                             <h6
                                                 class="text-primary position-absolute get-size-text cursor-pointer hover-text-black">
@@ -153,8 +145,81 @@
                                                 size</button>
                                             </h6>
                                         </div>
+                                        <small class="mt-2 d-block small-text text-primary text-end"><i>Add ext. area</i></small>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-3">
+                                        <select class="form-select custom-input form-control"
+                                            aria-label="Default select example">
+                                                <option value="0">Type of Area</option>
+                                                <option value="S">Strata</option>
+                                                <option value="L">Land</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <select class="form-select custom-input form-control"
+                                            aria-label="Default select example">
+                                                <option value="0">Tenure</option>
+                                                <option value="1">Freehold/999 years</option>
+                                                <option value="2">Leasehold/99 years</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <div class="position-relative">
+                                            <input type="number" name="" value="" placeholder="Sqm"
+                                                class="custom-input form-control get-size-input" />
+                                            <h6
+                                                class="text-primary position-absolute get-size-text cursor-pointer hover-text-black">
+                                                sqft</button>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <select class="form-select custom-input form-control"
+                                            aria-label="Default select example">
+                                                <option value="0">Built Year</option>
+                                                <option value="2023">2023</option>	
+                                                <option value="2022">2022</option>	
+                                                <option value="2021">2021</option>	
+                                                <option value="2020">2020</option>	
+                                                <option value="2019">2019</option>	
+                                                <option value="2018">2018</option>	
+                                                <option value="2017">2017</option>	
+                                                <option value="2016">2016</option>	
+                                                <option value="2015">2015</option>	
+                                                <option value="2014">2014</option>	
+                                                <option value="2013">2013</option>	
+                                                <option value="2012">2012</option>	
+                                                <option value="2011">2011</option>	
+                                                <option value="2010">2010</option>	
+                                                <option value="2009">2009</option>	
+                                                <option value="2008">2008</option>	
+                                                <option value="2007">2007</option>	
+                                                <option value="2006">2006</option>	
+                                                <option value="2005">2005</option>	
+                                                <option value="2004">2004</option>	
+                                                <option value="2003">2003</option>	
+                                                <option value="2002">2002</option>	
+                                                <option value="2001">2001</option>	
+                                                <option value="2000">2000</option>	
+                                                <option value="1999">1999</option>	
+                                                <option value="1998">1998</option>	
+                                                <option value="1997">1997</option>	
+                                                <option value="1996">1996</option>	
+                                                <option value="1995">1995</option>	
+                                                <option value="1994">1994</option>	
+                                                <option value="1993">1993</option>	
+                                                <option value="1992">1992</option>	
+                                                <option value="1991">1991</option>	
+                                                <option value="1990">1990</option>	
+                                                <option value="1989">1989</option>	
+                                                <option value="1988">1988</option>	
+                                                <option value="1987">Before 1988</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <small class="mt-2 d-block small-text text-error text-start"><i>Built year is required.</i></small>
                             </form>
                             <div class="form-group mt-4 text-center">
                                 <button class="primary-btn color-1 mx-auto" data-bs-toggle="modal"
@@ -167,77 +232,6 @@
                                 transfer, etc., please order a full inspection and valuation report <a
                                     href="javascript:void(0)">Here</a>.
                             </small>
-                        </div>
-                        <div class="tab-pane fade" id="pills-Rent" role="tabpanel" aria-labelledby="pills-Rent-tab"
-                            tabindex="0">
-                            <form>
-                                <div class="form-group mb-3">
-                                    <div class="position-relative">
-                                        <input type="search" name="" value=""
-                                            placeholder="Project Name, Postal Code, Address... "
-                                            class="custom-input form-control search-input" />
-                                        <div class="position-absolute search-ico">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-                                                height="24">
-                                                <path fill="none" d="M0 0h24v24H0z" />
-                                                <path
-                                                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15zm-3.847-8.699a2 2 0 1 0 2.646 2.646 4 4 0 1 1-2.646-2.646z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <select class="form-select custom-input form-control"
-                                        aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="row form-group mb-3">
-                                    <div class="col-xl-7">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-5">
-                                                <input type="text" name="" value="" placeholder="Floor"
-                                                    class="custom-input form-control" />
-                                            </div>
-                                            <div class="col-md-2 px-0 text-center">
-                                                <b>|</b>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <input type="text" name="" value="" placeholder="Unit"
-                                                    class="custom-input form-control" />
-                                            </div>
-                                        </div>
-                                        <small class="mt-2 d-block small-text"><i>The suggested size is an estimate,
-                                                please verify
-                                                before
-                                                proceeding</i></small>
-                                    </div>
-                                    <div class="col-xl-5 mt-4 mt-xl-0">
-                                        <div class="position-relative">
-                                            <input type="text" name="" value="" placeholder="Sqm"
-                                                class="custom-input form-control get-size-input" />
-                                            <h6
-                                                class="text-primary position-absolute get-size-text cursor-pointer hover-text-black">
-                                                Get
-                                                size</button>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group mt-4 text-center">
-                                    <button class="primary-btn color-1 mx-auto">Calculate X-Value</button>
-                                </div>
-                                <small>
-                                    X-Value™ automated valuation serves as a guide for general reference. If you require
-                                    a certified appraisal for any property sale, purchase, mortgage, accounting,
-                                    internal
-                                    transfer, etc., please order a full inspection and valuation report <a
-                                        href="javascript:void(0)">Here</a>.
-                                </small>
-                            </form>
                         </div>
                     </div>
                 </div>

@@ -76,6 +76,9 @@
   .footer-col h5 {
     font-size: 18px;
   }
+  .thank-you-box{
+    padding: 40px;
+  }
 }
 @media (max-width: 991px) {
   :root {
@@ -87,6 +90,15 @@
   }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .thank-you-list li:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 768px){
+  .thank-you-list{
+    max-height: calc(100vh - 511px);
+    overflow-y: auto;
   }
 }
 @media (max-width: 767px) {
@@ -101,6 +113,24 @@
   .terrydale-capital-grid,
   .header-menu-list-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .thank-you-box h4{
+    font-size: 16px;
+  }
+  .thank-you-box h2{
+    font-size: 18px;
+  }
+  .thank-you-box {
+    padding: 20px;
+  }
+  .thank-you-box .thank-you-img {
+    max-width: 190px;
+  }
+  .thank-you-list{
+    padding: 0;
+  }
+  .thank-you-list li a{
+    font-size: 14px;
   }
 }
 @media (max-width: 575px) {

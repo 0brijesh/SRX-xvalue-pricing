@@ -493,6 +493,15 @@ label sup.star {
   letter-spacing: 2;
   color: red;
 }
+.bg-color-after-ani::after{
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /* default css end */
 /* header css start */
 header {
@@ -632,3 +641,46 @@ footer {
   top: 3px;
 }
 /* Calculate your home css end */
+/* thank you css start */
+.thank-uou-section{
+  background-image: url(../images/bg/thank-you.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+.thank-you-box{
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 1000px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+.thank-you-box .thank-you-img{
+  max-width: 300px;
+}
+.thank-you-box svg{
+  fill: var(--black-color);
+  transition: all 0.3s;
+}
+.thank-you-list li:hover svg{
+  fill: var(--white-color);
+}
+.thank-you-box h4{
+  max-width: 700px;
+  line-height: 170%;
+}
+.thank-you-list {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+.thank-you-list a{
+  font-size: 18px;
+}
+/* thank you css end */

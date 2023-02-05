@@ -115,8 +115,8 @@
 											<option value="10">Detached</option>											
                                     </select>
                                 </div>
-                                <div class="row form-group mb-3">
-                                    <div class="col-xl-7">
+                                <div class="row">
+                                    <div class="col-xl-12 form-group mb-3">
                                         <div class="row align-items-center">
                                             <div class="col-md-5">
                                                 <input type="number" name="" value="" placeholder="Floor"
@@ -135,88 +135,29 @@
                                                 before
                                                 proceeding</i></small>
                                     </div>
-                                    <div class="col-xl-5 mt-4 mt-xl-0">
-                                        <div class="position-relative">
-                                            <input type="number" name="" value="" placeholder="Sqm"
-                                                class="custom-input form-control get-size-input" />
-                                            <h6
-                                                class="text-primary position-absolute get-size-text cursor-pointer hover-text-black">
-                                                Get
-                                                size</button>
-                                            </h6>
+                                    <div class="col-xl-12 form-group mb-3 d-flex flex-wrap align-items-center gap-3 gap-md-4">
+                                        <div class="d-flex flex-wrap align-items-center gap-2 gap-sm-4 gap-lg-3 gap-xl-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioGetSize" id="flexRadioGetSize1">
+                                                <label class="form-check-label cursor-pointer" for="flexRadioGetSize1">
+                                                 1-3 Months
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioGetSize" id="flexRadioGetSize2" checked>
+                                                <label class="form-check-label cursor-pointer" for="flexRadioGetSize2">
+                                                3-6 Months
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioGetSize" id="flexRadioGetSize3" checked>
+                                                <label class="form-check-label cursor-pointer" for="flexRadioGetSize3">
+                                                6-12 Months
+                                                </label>
+                                            </div>
                                         </div>
-                                        <small class="mt-2 d-block small-text text-primary text-end"><i>Add ext. area</i></small>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 form-group mb-3">
-                                        <select class="form-select custom-input form-control"
-                                            aria-label="Default select example">
-                                                <option value="0">Type of Area</option>
-                                                <option value="S">Strata</option>
-                                                <option value="L">Land</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6 form-group mb-3">
-                                        <select class="form-select custom-input form-control"
-                                            aria-label="Default select example">
-                                                <option value="0">Tenure</option>
-                                                <option value="1">Freehold/999 years</option>
-                                                <option value="2">Leasehold/99 years</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6 form-group mb-3">
-                                        <div class="position-relative">
-                                            <input type="number" name="" value="" placeholder="Sqm"
-                                                class="custom-input form-control get-size-input" />
-                                            <h6
-                                                class="text-primary position-absolute get-size-text cursor-pointer hover-text-black">
-                                                sqft</button>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 form-group mb-3">
-                                        <select class="form-select custom-input form-control"
-                                            aria-label="Default select example">
-                                                <option value="0">Built Year</option>
-                                                <option value="2023">2023</option>	
-                                                <option value="2022">2022</option>	
-                                                <option value="2021">2021</option>	
-                                                <option value="2020">2020</option>	
-                                                <option value="2019">2019</option>	
-                                                <option value="2018">2018</option>	
-                                                <option value="2017">2017</option>	
-                                                <option value="2016">2016</option>	
-                                                <option value="2015">2015</option>	
-                                                <option value="2014">2014</option>	
-                                                <option value="2013">2013</option>	
-                                                <option value="2012">2012</option>	
-                                                <option value="2011">2011</option>	
-                                                <option value="2010">2010</option>	
-                                                <option value="2009">2009</option>	
-                                                <option value="2008">2008</option>	
-                                                <option value="2007">2007</option>	
-                                                <option value="2006">2006</option>	
-                                                <option value="2005">2005</option>	
-                                                <option value="2004">2004</option>	
-                                                <option value="2003">2003</option>	
-                                                <option value="2002">2002</option>	
-                                                <option value="2001">2001</option>	
-                                                <option value="2000">2000</option>	
-                                                <option value="1999">1999</option>	
-                                                <option value="1998">1998</option>	
-                                                <option value="1997">1997</option>	
-                                                <option value="1996">1996</option>	
-                                                <option value="1995">1995</option>	
-                                                <option value="1994">1994</option>	
-                                                <option value="1993">1993</option>	
-                                                <option value="1992">1992</option>	
-                                                <option value="1991">1991</option>	
-                                                <option value="1990">1990</option>	
-                                                <option value="1989">1989</option>	
-                                                <option value="1988">1988</option>	
-                                                <option value="1987">Before 1988</option>
-                                        </select>
+                                        <span class="text-primary cursor-pointer ms-sm-auto get-size-more-text" data-bs-toggle="modal"
+                                        data-bs-target="#getSizeMoreOptions">More</span>
                                     </div>
                                 </div>
                                 <small class="mt-2 d-block small-text text-error text-start"><i>Built year is required.</i></small>
@@ -514,6 +455,99 @@
         </div>
     </div>
     <!-- header drawer end -->
+     <!-- Modal -->
+     <div class="modal fade get-size-more-options-modal" id="getSizeMoreOptions" tabindex="-1" aria-labelledby="getSizeMoreOptionsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-primary" id="getSizeMoreOptionsLabel">More options</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body overflow-y-auto small-scrollbar-width">
+                    <div class="d-flex align-items-center gap-2 gap-sm-3 gap-xl-4 get-size-more-options-list">
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="px-0 text-center">
+                            <b>|</b>
+                        </div>
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="cursor-pointer text-primary hover-text-black">
+                            Months
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 gap-sm-3 gap-xl-4 get-size-more-options-list">
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="px-0 text-center">
+                            <b>|</b>
+                        </div>
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="cursor-pointer text-primary hover-text-black">
+                            Months
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 gap-sm-3 gap-xl-4 get-size-more-options-list">
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="px-0 text-center">
+                            <b>|</b>
+                        </div>
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="cursor-pointer text-primary hover-text-black">
+                            Months
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 gap-sm-3 gap-xl-4 get-size-more-options-list">
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="px-0 text-center">
+                            <b>|</b>
+                        </div>
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="cursor-pointer text-primary hover-text-black">
+                            Months
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 gap-sm-3 gap-xl-4 get-size-more-options-list">
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="px-0 text-center">
+                            <b>|</b>
+                        </div>
+                        <div class="">
+                            <input type="number" name="" value=""
+                                class="custom-input form-control" />
+                        </div>
+                        <div class="cursor-pointer text-primary hover-text-black">
+                            Months
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./assets/js/jquery-3.6.3.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>

@@ -640,6 +640,19 @@ footer {
   position: relative;
   top: 3px;
 }
+.moretext {
+  display: none;
+}
+.get-size-more-options-list:not(:last-child){
+  margin-bottom: 15px;
+}
+.get-size-more-options-modal input{
+  min-height: 40px;
+  border-radius: 5px;
+}
+.get-size-more-options-modal .modal-body {
+  max-height: calc(100vh - 400px);
+}
 /* Calculate your home css end */
 /* thank you css start */
 .thank-uou-section{

@@ -56,3 +56,13 @@ $(".counter").each(function () {
   );
 });
 // counting number js end
+// read more read less js start
+$('.moreless-button').click(function() {
+  $('.moretext').slideToggle();
+  if ($('.moreless-button').text() == "Read more") {
+    $(this).text("Read less")
+  } else {
+    $(this).text("Read more")
+  }
+});
+// read more read less js end

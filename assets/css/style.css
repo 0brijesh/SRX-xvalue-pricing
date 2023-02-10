@@ -560,28 +560,12 @@ header.fixed .list-menu li a::before {
 /* sub footer css start */
 .sub-footer-section {
   background-color: var(--light-prime-secondary-color);
-  padding: 15px 12px;
+  padding: 30px 12px;
 }
 .menu-social-options-list a:not(:last-child) {
   margin-right: 25px;
 }
 /* sub footer css end */
-/* footer css start */
-footer {
-  background-color: rgb(174 197 231 / 5%);
-  padding: 50px 12px;
-  border: 1px solid #dfdcdc;
-  border-width: 1px 0;
-}
-.footer-grid {
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-}
-.footer-list-wrap {
-  max-height: 260px;
-  overflow-y: auto;
-}
-/* footer css end */
 /* Calculate your home css start */
 .terrydale-capital-details-wrap {
   background-color: var(--white-color);
@@ -593,10 +577,10 @@ footer {
 .terrydale-capital-grid {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 .terrydale-capital-col h6 {
-  font-size: 14px;
+  font-size: 16px;
 }
 .terrydale-capital-col h3 {
   font-size: 34px;
@@ -637,8 +621,6 @@ footer {
 .thank-you-list li svg{
   min-width: 24px;
   min-height: 24px;
-  position: relative;
-  top: 3px;
 }
 .moretext {
   display: none;
@@ -666,32 +648,28 @@ footer {
   overflow-y: auto;
 }
 .thank-you-box{
-  background-color: rgba(255, 255, 255, 0.5);
-  max-width: 1000px;
+  background-color: var(--white-color);
+  max-width: 800px;
   max-height: calc(100vh - 100px);
   overflow-y: auto;
   margin: 0 auto;
   padding: 50px;
   text-align: center;
+  border-radius: 15px;
 }
 .thank-you-box .thank-you-img{
   max-width: 300px;
 }
 .thank-you-box svg{
-  fill: var(--black-color);
+  fill: #00B030;
   transition: all 0.3s;
 }
 .thank-you-list li:hover svg{
-  fill: var(--white-color);
+  fill: var(--black-color);
 }
-.thank-you-box h4{
-  max-width: 700px;
-  line-height: 170%;
-}
-.thank-you-list {
+.thank-you-max-width{
   max-width: 500px;
   margin: 0 auto;
-  padding-left: 20px;
 }
 .thank-you-list a{
   font-size: 18px;

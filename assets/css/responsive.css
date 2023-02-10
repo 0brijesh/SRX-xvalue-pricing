@@ -40,9 +40,6 @@
   .terrydale-capital-details-wrap {
     padding: 30px 20px;
   }
-  .terrydale-capital-col h6 {
-    font-size: 12px;
-  }
   .footer-grid {
     grid-gap: 30px 20px;
   }
@@ -97,8 +94,12 @@
 }
 @media (min-width: 768px){
   .thank-you-list{
-    max-height: calc(100vh - 511px);
+    max-height: calc(100vh - 514px);
+    min-height: 250px;
     overflow-y: auto;
+  }
+  .thank-you-box h4, .thank-you-box p, .thank-you-box h5{
+    line-height: 170%;
   }
 }
 @media (min-width: 576px){
@@ -113,8 +114,8 @@
     padding: 8px 0;
   }
   :root {
-    --section-big-spacing: 50px;
-    --section-mid-spacing: 40px;
+    --section-big-spacing: 40px;
+    --section-mid-spacing: 30px;
   }
   .terrydale-capital-grid,
   .header-menu-list-grid {

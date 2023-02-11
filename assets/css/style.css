@@ -577,10 +577,10 @@ header.fixed .list-menu li a::before {
 .terrydale-capital-grid {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .terrydale-capital-col h6 {
-  font-size: 16px;
+  font-size: 34px;
 }
 .terrydale-capital-col h3 {
   font-size: 34px;

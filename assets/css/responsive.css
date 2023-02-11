@@ -34,9 +34,6 @@
   footer {
     padding: 50px 12px 20px;
   }
-  .terrydale-capital-col h3 {
-    font-size: 16px;
-  }
   .terrydale-capital-details-wrap {
     padding: 30px 20px;
   }
@@ -138,6 +135,9 @@
   }
   .thank-you-list li a{
     font-size: 14px;
+  }
+  .terrydale-capital-col h6,.terrydale-capital-col h3{
+    font-size: 20px;
   }
 }
 @media (max-width: 575px) {
